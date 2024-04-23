@@ -4,8 +4,8 @@ import React from 'react';
 import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
 import JobsPage from './pages/JobsPage'
-import AddJobs from './pages/AddJobs';
-import NotFoundPage from './components/NotFoundPage';
+import JobPage from './pages/JobPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,7 +14,7 @@ const router = createBrowserRouter(
       //*This handles the main page
       <Route index element={<HomePage />} />
       <Route path='/jobs' element={<JobsPage />} />
-      <Route path='/add-jobs' element={<AddJobs />} />
+      <Route path='/jobs/:id' element={<JobPage />} />
 
       //*This handles error
       <Route path='*' element={<NotFoundPage />} />

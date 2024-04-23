@@ -1,19 +1,24 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import JobListing from './JobListing'
+import Spinner from './Spinner'
 
 const JobList = ({ isHome = false }) => {
-    //* We use slice method to slice the cunt of the array from 0 to 3
 
-
+    //* We use use state that has an empty so we can store the response data from the use effect
     const [jobs, setJobs] = useState([]);
 
     const [loading, setLoading] = useState(true);
 
+
     useEffect(() => {
         const fetchJobs = async () => {
+            //! what a feature man: you can just limit the data by just adding ?_limit=(how many u want)
+            const apiUrl = isHome
+                ? '/api/jobs?_limit=3'
+                : '/api/jobs'
             try {
-                const res = await fetch('http://localhost:5000/jobs');
+                const res = await fetch(apiUrl);
                 const data = await res.json();
                 setJobs(data);
             } catch (err) {
@@ -31,12 +36,16 @@ const JobList = ({ isHome = false }) => {
                 <h2 className="text-3xl font-bold text-indigo-500 mb-6 text-center">
                     {isHome ? "Recent Jobs" : "Browse Jobs"}
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-                    {loading ? (<h2>Loading</h2>) : <>                    {jobs.map((job) => (
-                        <JobListing key={job.id} job={job} />
-                    ))}
-                    </>}
-                </div>
+
+                {loading ? (
+                    <Spinner loading={loading} />
+                ) :
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                        {jobs.map((job) => (
+                            <JobListing key={job.id} job={job} />
+                        ))}
+                    </div>}
+
             </div>
         </section>
     </>
