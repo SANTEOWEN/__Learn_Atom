@@ -18,7 +18,8 @@ function Hero({title = 'Become a React Dev', subtitle = 'Find the React job that
                     </p>
                 </div>
             </div>
-        </section></>
+        </section>
+        </>
 }
 
 export default Hero
