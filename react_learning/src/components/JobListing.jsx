@@ -8,9 +8,7 @@ const JobListing = ({ job }) => {
 
     let jobDesc = job.description;
 
-    if (!showFullDescription){
-        jobDesc = jobDesc.substring(0, 90) + '...'
-    }
+    !showFullDescription ? jobDesc = jobDesc.substring(0, 90) + '...' : null;
 
     return (
         <div className="bg-white rounded-xl shadow-md relative">
@@ -38,7 +36,7 @@ const JobListing = ({ job }) => {
                         <FaMapMarker className='inline text-lg mb-1 mr-1' />
                         {job.location}
                     </div>
-                    <Link to={`/job ${job.id}`} className="h-[36px] bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg text-center text-sm">
+                    <Link to={`/jobs/${job.id}`} className="h-[36px] bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg text-center text-sm">
                         Read More
                     </Link>
                 </div>
