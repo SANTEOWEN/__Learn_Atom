@@ -1,4 +1,4 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { FaMapMarker } from 'react-icons/fa'
