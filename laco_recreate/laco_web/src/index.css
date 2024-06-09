@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .sec-title {
+        @apply
+          text-6xl 
+          font-light
+          tracking-normal 
+          leading-[1.4]
+    }
+}

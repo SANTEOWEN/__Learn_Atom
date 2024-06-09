@@ -25,7 +25,7 @@ const HomeSlider = () => {
                 }}
                 modules={[Navigation]}
             >
-                <SwiperSlide>
+                <SwiperSlide className='cursor-pointer'>
                     <div className='!bg-cover !bg-center md:h-[53rem] h-[36.875rem] w-full flex' style={{ background: `url(${img_1}) no-repeat` }}>
                         <div className='flex justify-center items-center p-[30px] flex-col max-w-[800px] m-auto gap-[10px]'>
                             <h6 className='text-[25px] text-white font-light'>Unitas Caritas Veritas</h6>
@@ -35,7 +35,7 @@ const HomeSlider = () => {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className='cursor-pointer'>
                     <div className='!bg-cover !bg-center md:h-[53rem] h-[36.875rem] w-full flex' style={{ background: `url(${img_2}) no-repeat` }}>
                         <div className='flex justify-center items-start p-[30px] md:ml-[50px] ml-0 flex-col'>
                             <h3 className='text-[30px] font-semibold text-white'>The Best Courses You Will Find Here</h3>
@@ -46,7 +46,7 @@ const HomeSlider = () => {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className='cursor-pointer'>
                     <div className='!bg-cover !bg-center md:h-[53rem] h-[36.875rem] flex w-full' style={{ background: `url(${img_3}) no-repeat` }}>
                         <div className='flex justify-center items-center p-[30px] md:ml-[50px] ml-0 flex-col'>
                             <h3 className='text-[30px] font-semibold text-white'>We Evangelize</h3>

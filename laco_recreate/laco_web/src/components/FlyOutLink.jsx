@@ -11,7 +11,7 @@ const FlyOutLink = ({ children, href, FlyoutContent }) => {
             onMouseLeave={() => setOpen(false)}
             className='relative h-fit w-fit z-50'>
 
-            <a href={href} className='relative text-white font-medium cursor-pointer'>
+            <a href={href} className='relative text-white text-base cursor-pointer'>
                 {children}
                 <span style={{
                     transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
