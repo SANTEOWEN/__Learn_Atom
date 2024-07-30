@@ -41,63 +41,77 @@ export const schoolImages = [
 
 export const navList = [
     {
-        id: "1",
-        nav: "Home"
+        id: 1,
+        nav: "Home",
+        route: "/home",
     },
     {
-        id: "2",
-        nav: "About"
+        id: 2,
+        nav: "About",
+        route: "/About",
     },
     {
-        id: "3",
-        nav: "History"
+        id: 3,
+        nav: "History",
+        route: "/History",
     },
     {
-        id: "4",
-        nav: "Mission & Vission"
+        id: 4,
+        nav: "Mission & Vission",
+        route: "/MissionVission",
     },
     {
-        id: "5",
-        nav: "Data Privacy"
+        id: 5,
+        nav: "Data Privacy",
+        route: "/DataPrivacy",
     },
     {
-        id: "6",
-        nav: "Admissions"
+        id: 6,
+        nav: "Admissions",
+        route: "/Admissions",
     },
     {
-        id: "7",
-        nav: "Program Offerings"
+        id: 7,
+        nav: "Program Offerings",
+        route: "/ProgramOfferings",
     },
     {
-        id: "8",
-        nav: "About"
+        id: 8,
+        nav: "About",
+        route: "/About",
     },
     {
-        id: "9",
-        nav: "History"
+        id: 9,
+        nav: "History",
+        route: "/History"
     },
     {
-        id: "10",
-        nav: "Mission & Vission"
+        id: 10,
+        nav: "Mission & Vission",
+        route: "/MissionVission"
     },
 ]
 
 export const navLinksOne = [
     {
         id: 1,
-        links: 'History'
+        name: 'History',
+        route: "/History"
     },
     {
         id: 2,
-        links: 'Mission & Vission'
+        name: 'Mission & Vission',
+        route: "/MissionVission"
     },
     {
         id: 3,
-        links: 'Data Privacy'
+        name: 'Privacy Policy',
+        route: "/DataPrivacy"
     },
     {
         id: 4,
-        links: 'Program Offerings'
+        name: 'Program Offerings',
+        route: "/ProgramOfferings"
     },
 ]
 

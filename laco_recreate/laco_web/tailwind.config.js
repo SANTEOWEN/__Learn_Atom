@@ -9,18 +9,26 @@ export default {
       fontFamily: {
         sans: ['Poppins', 'sans-serif']
       },
+      fontWeight: {
+        'thin': '100',
+        'light': '300',
+        'normal': '400',
+        'bold': '700',
+        'extra-bold': '800',
+        'black': '900'
+      },
       backgroundColor: {
         'custom-blue-1': '#006bb3',
         'custom-blue-2': '#0098ff'
       },
       color: {
-        'btn-blue-1' : '#3876bf'
+        'btn-blue-1': '#3876bf'
       },
       transitionProperty: {
         'flex': 'flex',
       },
       transitionDuration: {
-        '800':'800ms',
+        '800': '800ms',
       }
     },
   },

@@ -18,7 +18,7 @@ const JobListing = ({ job }) => {
                     <h3 className="text-xl font-bold" >{job.title}</h3>
                 </div>
 
-                <div className="mb-5">
+                <div className="mb-5">  
                     {jobDesc}
                 </div>
 

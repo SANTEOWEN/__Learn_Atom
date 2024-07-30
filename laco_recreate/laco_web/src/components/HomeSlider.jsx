@@ -7,11 +7,13 @@ import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import img_1 from '../assets/3.jpg'
 import img_2 from '../assets/mary_1.jpg'
 import img_3 from '../assets/test_1.jpg'
-import Button from './Button';
+import { useNavigate } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
 const HomeSlider = () => {
+    const loginNavigate = useNavigate();
+
     return (
         <section className='z-10'>
             <Swiper
@@ -26,17 +28,17 @@ const HomeSlider = () => {
                 modules={[Navigation]}
             >
                 <SwiperSlide className='cursor-pointer'>
-                    <div className='!bg-cover !bg-center md:h-[53rem] h-[36.875rem] w-full flex' style={{ background: `url(${img_1}) no-repeat` }}>
+                    <div className='!bg-cover !bg-center md:h-[55rem] h-[55rem] w-full flex' style={{ background: `url(${img_1}) no-repeat` }}>
                         <div className='flex justify-center items-center p-[30px] flex-col max-w-[800px] m-auto gap-[10px]'>
                             <h6 className='text-[25px] text-white font-light'>Unitas Caritas Veritas</h6>
                             <h3 className='text-center md:text-[40px] text-[2rem] text-white font-semibold'><span className='text-sky-600'>La Consolacion</span> College Novaliches</h3>
                             {/*Use router dom for this one*/}
-                            <Button name={"Join Us"} href={"#"} />
+                            <button className='rounded-lg bg-white flex justify-center items-center cursor-pointer w-[200px] h-[50px] text-[#6ec1e4] transition ease-in-out hover:scale-[110%] hover:bg-[#6ec1e4] hover:text-white' onClick={() => { loginNavigate(`/login`) }}>Join Us!</button>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='cursor-pointer'>
-                    <div className='!bg-cover !bg-center md:h-[53rem] h-[36.875rem] w-full flex' style={{ background: `url(${img_2}) no-repeat` }}>
+                    <div className='!bg-cover !bg-center md:h-[55rem] h-[55rem] w-full flex' style={{ background: `url(${img_2}) no-repeat` }}>
                         <div className='flex justify-center items-start p-[30px] md:ml-[50px] ml-0 flex-col'>
                             <h3 className='text-[30px] font-semibold text-white'>The Best Courses You Will Find Here</h3>
                             <p className='text-[20px] font-thin text-white'>We Have a <span className='text-[#006bb3]'>
@@ -47,7 +49,7 @@ const HomeSlider = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='cursor-pointer'>
-                    <div className='!bg-cover !bg-center md:h-[53rem] h-[36.875rem] flex w-full' style={{ background: `url(${img_3}) no-repeat` }}>
+                    <div className='!bg-cover !bg-center md:h-[55rem] h-[55rem] flex w-full' style={{ background: `url(${img_3}) no-repeat` }}>
                         <div className='flex justify-center items-center p-[30px] md:ml-[50px] ml-0 flex-col'>
                             <h3 className='text-[30px] font-semibold text-white'>We Evangelize</h3>
                             <p className='text-center md:text-[15px] text-20px font-extralight text-white max-w-lg mb-5'>We passionately share the transformative power of faith. Our mission is to spread the message
