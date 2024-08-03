@@ -7,7 +7,7 @@ const Hero = () => {
             {/* <HomeSlider /> */}
             <section className={`!bg-cover !bg-center bg-[url('https://images.unsplash.com/photo-1710255073837-ec303d30e9c2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-gray-700 bg-blend-multiply`}>
                 <div className="px-4 mx-auto max-w-screen-2xl text-center py-48 lg:py-96 md:h-[60rem] h-[60rem]">
-                    <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">La Consolacion College Novaliches</h1>
+                    <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"><span className="text-blue-500">LA CONSOLACION </span>COLLEGE NOVALICHES</h1>
                     <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">A premier educational institution committed to academic excellence and holistic development.</p>
                     <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
                         <Link to={"/login"} className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[#006bb3] hover:bg-[#004c80] focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">

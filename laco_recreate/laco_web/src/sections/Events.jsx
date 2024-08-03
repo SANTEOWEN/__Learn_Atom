@@ -11,7 +11,7 @@ const Events = () => {
             <section className="flex flex-col w-full min-h-60 mx-auto mt-[2rem] md:mt-10">
                 <div className="mx-auto w-3/4 ">
                     <h1 className="md:text-5xl font-bold text-4xl text-white">Events and Announcements</h1>
-                    <p className="my-2 text-gray-300">This are the list of Activities, Events and announcements.</p>
+                    <p className="mt-4 text-gray-300">This are the list of Activities, Events and announcements.</p>
                 </div>
                 <div className="w-full flex flex-row justify-center items-center p-10">
                     <div className={gridStyle}>

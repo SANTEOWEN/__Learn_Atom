@@ -12,7 +12,7 @@ function PopularC() {
 
                 <div className='flex items-center md:items-end flex-col'>
                     <span className='text-white text-lg font-semibold'>Main Courses</span>
-                    <h2 className='mt-4 text-2xl text-white font-bold md:text-4xl text-center'>This our most popular courses</h2>
+                    <h2 className='mt-4 text-2xl text-white font-bold md:text-4xl text-center'>Our most popular courses</h2>
                 </div>
 
                 <div className='md:rounded-xl rounded-none mt-16 gap-x-0 md:gap-x-5 grid divide-x divide-y overflow-hidden sm:grid-cols-2 lg:divide-y-0 lg:grid-cols-3 xl:grid-cols-4'>
