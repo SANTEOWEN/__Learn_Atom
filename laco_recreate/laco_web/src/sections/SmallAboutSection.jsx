@@ -13,10 +13,10 @@ const SmallAboutSection = () => {
 
 
   return (
-    <div className="flex flex-col flex-wrap justify-center items-center min-h-screen w-full bg-[#242526] overflow-hidden">
+    <div className="hidden md:flex flex-col flex-wrap justify-center items-center min-h-screen w-full overflow-hidden">
 
       <div className="my-3 flex justify-center items-center flex-col">
-        <h1 className="md:text-[44px] text-[40px] uppercase text-stone-200 text-center"><span className="text-[#006bb3]">Hello</span> & Welcome</h1>
+        <h1 className="md:text-[44px] text-[40px] uppercase font-semibold text-stone-200 text-center"><span className="text-[#006bb3]">Hello</span> & Welcome</h1>
         <p className="text-stone-200 p-4 md:p-5 text-center md:w-1/2">As we look back at LCC’s beginning and trace its development with the eyes of faith, we perceive an intermingling of God’s providence and historical events that brought this institution to where it is today.</p>
       </div>
 

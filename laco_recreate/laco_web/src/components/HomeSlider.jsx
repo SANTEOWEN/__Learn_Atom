@@ -31,7 +31,7 @@ const HomeSlider = () => {
                     <div className='!bg-cover !bg-center md:h-[55rem] h-[55rem] w-full flex' style={{ background: `url(${img_1}) no-repeat` }}>
                         <div className='flex justify-center items-center p-[30px] flex-col max-w-[800px] m-auto gap-[10px]'>
                             <h6 className='text-[25px] text-white font-light'>Unitas Caritas Veritas</h6>
-                            <h3 className='text-center md:text-[40px] text-[2rem] text-white font-semibold'><span className='text-sky-600'>La Consolacion</span> College Novaliches</h3>
+                            <h3 className='text-center md:text-[40px] text-2xl text-white font-semibold my-3'><span className='text-sky-600'>La Consolacion</span> College Novaliches</h3>
                             {/*Use router dom for this one*/}
                             <button className='rounded-lg bg-white flex justify-center items-center cursor-pointer w-[200px] h-[50px] text-[#6ec1e4] transition ease-in-out hover:scale-[110%] hover:bg-[#6ec1e4] hover:text-white' onClick={() => { loginNavigate(`/login`) }}>Join Us!</button>
                         </div>

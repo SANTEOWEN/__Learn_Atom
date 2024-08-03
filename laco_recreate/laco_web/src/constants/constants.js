@@ -1,6 +1,7 @@
 import { schl_1, schl_2, schl_7, schl_4, schl_5, schl_8 } from "../assets/school_photos/photos"
 import { event_1, event_2, event_3 } from "../assets/events_photos/events"
 import { faBan, faUsers, faHouseCircleCheck, faWifi, faComputer } from '@fortawesome/free-solid-svg-icons'
+import { color } from "framer-motion"
 
 
 export const schoolImages = [
@@ -84,8 +85,8 @@ export const navList = [
     },
     {
         id: 10,
-        nav: "Mission & Vission",
-        route: "/MissionVission"
+        nav: "Contact Us",
+        route: "/contact"
     },
 ]
 
@@ -118,22 +119,22 @@ export const events = [
         img: event_1,
         date: "May 30, 2024",
         title: "Commencement Activity",
-        content: "Graduation day is a momentous occasion marking the culmination of years of hard work, dedication, and perseverance. As the sun rises on June 15, 2024, the University Auditorium will be abuzz with excitement and anticipation. Students, adorned in their caps and gowns, will gather with their families and friends to celebrate this significant milestone."
+        content: "Graduation day marks the culmination of years of hard work. Students will gather at the University Auditorium to celebrate this milestone."
     },
     {
         id: 2,
         img: event_2,
         date: "May 28, 2024",
         title: "Baccalaureate Mass",
-        content: "Congratulations on reaching this significant milestone in your academic journey! As you prepare to embark on new adventures and face exciting challenges ahead, we invite you to join us in a moment of reflection, gratitude, and celebration at our Baccalaureate Mass."
+        content: "Join us for a moment of reflection and celebration as you prepare for new adventures."
     },
     {
         id: 3,
         img: event_3,
-        date: "Aprill 22, 2024",
+        date: "April 22, 2024",
         title: "School Retreat",
-        content: "Congratulations on reaching this incredible milestone! As you embark on this exciting new chapter, we invite you to join us for a transformative school retreat at La Consolacion College Novaliches. This retreat is the perfect opportunity to reflect on your journey, bond with fellow graduates, and prepare for the adventures that lie ahead."
-    },
+        content: "Reflect on your journey, bond with fellow graduates, and prepare for the adventures ahead at the La Consolacion College Novaliches retreat."
+    }
 ]
 
 export const reasons = [
@@ -173,4 +174,37 @@ export const reasons = [
         content: "Online Learning for College and Senior High School, and DepEd voucher accepted for SHS.",
         color: "#024173"
     }
+]
+
+export const historySchool = [
+
+    {
+        id: 2,
+        title: "15 Years of Excellence",
+        date: "2005",
+        content: "La Consolacion College Novaliches has demonstrated exceptional academic performance and a strong commitment to excellence and innovation.",
+        color: "#f75842"
+    },
+    {
+        id: 3,
+        title: "100% Enrollment",
+        date: "2021",
+        content: "La Consolacion College Novaliches has achieved a 100% enrollment rate.",
+        color: "#00bf8e"
+    },
+    {
+        id: 4,
+        title: "200+ Faculty Members",
+        date: "2023",
+        content: "La Consolacion College Novaliches has over 200 faculty members committed to student development and community well-being.",
+        color: "#f7c453"
+    },
+    {
+        id: 5,
+        title: "Awards and Recognition",
+        date: "2023",
+        content: "La Consolacion College Novaliches has been recognized with prestigious awards, such as Best College of the Year and National School of the Arts.",
+        color: "#00bf8e"
+    }
+
 ]

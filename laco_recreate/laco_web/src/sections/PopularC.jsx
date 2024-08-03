@@ -3,18 +3,21 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faComputer, faCoins, faBook } from '@fortawesome/free-solid-svg-icons'
 
+
+//mt-[75rem] md:mt-52
 function PopularC() {
     return <>
-        <section className='py-16 overflow-hidden mt-[75rem] md:mt-52'>
+        <section className='py-16 overflow-hidden mt-[80rem] md:mt-52 my-40'>
             <div className='container m-auto px-6 space-y-8 text-gray-500 md:px-12'>
-                <div>
+
+                <div className='flex items-center md:items-end flex-col'>
                     <span className='text-white text-lg font-semibold'>Main Courses</span>
-                    <h2 className='mt-4 text-2xl text-white font-bold md:text-4xl'>This our most popular courses</h2>
+                    <h2 className='mt-4 text-2xl text-white font-bold md:text-4xl text-center'>This our most popular courses</h2>
                 </div>
 
-                <div className='mt-16 grid divide-x divide-y rounded-xl overflow-hidden sm:grid-cols-2 lg:divide-y-0 lg:grid-cols-3 xl:grid-cols-4'>
+                <div className='md:rounded-xl rounded-none mt-16 gap-x-0 md:gap-x-5 grid divide-x divide-y overflow-hidden sm:grid-cols-2 lg:divide-y-0 lg:grid-cols-3 xl:grid-cols-4'>
 
-                    <div className='relative group bg-white transition hover:z-[1] hover:shadow-2xl'>
+                    <div className='relative group bg-white transition hover:z-[0] hover:shadow-2xl rounded-none md:rounded-xl'>
                         <div className='relative p-8 space-y-8'>
                             <FontAwesomeIcon icon={faComputer} className='w-10 text-5xl text-cyan-500' />
 
@@ -29,7 +32,7 @@ function PopularC() {
                         </div>
                     </div>
 
-                    <div className='relative group bg-white transition hover:z-[1] hover:shadow-2xl'>
+                    <div className='relative group bg-white transition hover:z-[0] hover:shadow-2xl rounded-none md:rounded-xl'>
                         <div className='relative p-8 space-y-8'>
                             <FontAwesomeIcon icon={faCoins} className='w-10 text-5xl text-amber-500' />
 
@@ -44,7 +47,7 @@ function PopularC() {
                         </div>
                     </div>
 
-                    <div className='relative group bg-white transition hover:z-[1] hover:shadow-2xl'>
+                    <div className='relative group bg-white transition hover:z-[0] hover:shadow-2xl rounded-none md:rounded-xl'>
                         <div className='relative p-8 space-y-8'>
                             <FontAwesomeIcon icon={faBook} className='w-10 text-5xl text-pink-500' />
 
@@ -59,7 +62,7 @@ function PopularC() {
                         </div>
                     </div>
 
-                    <div className="relative group bg-gray-100 transition hover:z-[1] hover:shadow-2xl lg:hidden xl:block">
+                    <div className="relative group bg-gray-100 transition hover:z-[0] hover:shadow-2xl lg:hidden xl:block rounded-none md:rounded-xl">
                         <div className="relative p-8 space-y-8 border-dashed rounded-lg transition duration-300 group-hover:bg-white group-hover:border group-hover:scale-90">
 
                             <div className="space-y-2">

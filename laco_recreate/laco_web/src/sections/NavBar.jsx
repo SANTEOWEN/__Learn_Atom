@@ -5,25 +5,41 @@ import NavContents from '../components/NavContents';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { navList } from '../constants/constants';
 
 
 
 const NavBar = () => {
   const [open, setOpen] = useState(true);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleClick = () => {
     setOpen((prev) => !prev);
   }
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+
+  }, [])
 
   return (
-    <nav className='p-3 flex bg-custom-blue-1 md:justify-between justify-around items-center shadow-xl'>
+    <nav className={`w-screen fixed py-3 flex md:justify-between justify-around items-center z-20 ${isScrolled ? 'bg-blue-500/30 backdrop-blur-md' : ''}`}>
       <div className='flex md:mx-20 mx-0'>
-        <a href="#" id='brand' className='flex gap-2 items-center'>
+        <Link to={"/"} id='brand' className='flex gap-2 items-center'>
           <img src={logo} alt="logo" className='object-cover max-w-60 max-h-60' />
-        </a>
+        </Link>
       </div>
       <div className='hidden md:flex gap-5 mx-20'>
         <FlyOutLink href={"/"}>Home</FlyOutLink>

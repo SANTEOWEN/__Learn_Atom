@@ -13,4 +13,18 @@
 
 body {
   @apply bg-[#242526];
+  background: url(../src/assets/main_bg/blob_3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+::-webkit-scrollbar {
+  background-color: #006bb3;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #71bbec;
+  border-radius: 1rem;
 }
