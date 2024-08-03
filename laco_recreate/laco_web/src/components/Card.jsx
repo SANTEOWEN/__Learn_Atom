@@ -1,30 +1,20 @@
-/* eslint-disable react/prop-types */
-const Card = ({ date, title, content, imgUrl }) => {
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-
-    return (
-        <>
-            <div className="w-[350px] md:h-[650px] h-[400px] bg-white relative rounded-t-md ">
-                <div className="flex justify-start flex-col">
-                    {/* event image */}
-                    <div className="flex bg-cover bg-center bg-no-repeat h-[275px] w-full rounded-t-md" style={{ backgroundImage: `url(${imgUrl})` }}>
-                    </div>
-
-                    {/* text-contents */}
-                    <div className="p-3">
-                        <h4 className="text-sm font-medium">{date}</h4>
-                        <h1 className="font-semibold text-lg text-sky-500">{title}</h1>
-                        <p className="pt-2 text-base hidden md:block ">{content}</p>
-                    </div>
-
-                    {/* Share links */}
-                    {/* Finish this tomorow */}
-
-                </div>
-
+// eslint-disable-next-line react/prop-types
+function Card({ image, title, content, onClick, date }) {
+    return <>
+        <div className='max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
+            <Link>
+                <img src={image} alt={title} className='rounded-t-lg' />
+            </Link>
+            <div className='p-5'>
+                <Link>
+                    <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>{`${content} ${date}`}</h5>
+                </Link>
             </div>
-        </>
-    )
+        </div>
+    </>
 }
 
 export default Card

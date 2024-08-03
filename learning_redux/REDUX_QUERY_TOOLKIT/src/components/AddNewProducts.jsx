@@ -1,8 +1,9 @@
-import React from 'react'
+
 import { useAddNewProductMutation } from '../app/service/dummyData'
 
 const AddNewProducts = () => {
     //To actually use the POST method we need to destructure the array of products from the API
+
     const [addNewProducts, { data, isLoading, isError }] = useAddNewProductMutation()
 
     if (isError) {

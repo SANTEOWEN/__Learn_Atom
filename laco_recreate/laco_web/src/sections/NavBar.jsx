@@ -29,6 +29,7 @@ const NavBar = () => {
         <FlyOutLink href={"/"}>Home</FlyOutLink>
         <FlyOutLink FlyoutContent={NavContents}>About</FlyOutLink>
         <FlyOutLink FlyoutContent={NavContentsTwo}>Admissions</FlyOutLink>
+        <FlyOutLink href={"/contact"}>Contact</FlyOutLink>
       </div>
 
 

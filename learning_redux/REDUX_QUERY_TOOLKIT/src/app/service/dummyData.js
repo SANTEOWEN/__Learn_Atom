@@ -50,9 +50,3 @@ export const productsApi = createApi({
 
 
 export const { useGetAllProductsQuery, useGetAllProductsByIdQuery, useAddNewProductMutation, useUpdateProductMutation, useDeleteProducMutation } = productsApi
-
-
-
-
-
-

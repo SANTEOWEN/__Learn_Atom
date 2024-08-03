@@ -1,5 +1,7 @@
 import { schl_1, schl_2, schl_7, schl_4, schl_5, schl_8 } from "../assets/school_photos/photos"
 import { event_1, event_2, event_3 } from "../assets/events_photos/events"
+import { faBan, faUsers, faHouseCircleCheck, faWifi, faComputer } from '@fortawesome/free-solid-svg-icons'
+
 
 export const schoolImages = [
     {
@@ -32,11 +34,6 @@ export const schoolImages = [
         name: "image_1",
         description: "LAMAW1"
     },
-    // {
-    //     imgUrl: schl_3,
-    //     name: "image_1",
-    //     description: "LAMAW1"
-    // },
 ]
 
 export const navList = [
@@ -136,5 +133,44 @@ export const events = [
         date: "Aprill 22, 2024",
         title: "School Retreat",
         content: "Congratulations on reaching this incredible milestone! As you embark on this exciting new chapter, we invite you to join us for a transformative school retreat at La Consolacion College Novaliches. This retreat is the perfect opportunity to reflect on your journey, bond with fellow graduates, and prepare for the adventures that lie ahead."
+    },
+]
+
+export const reasons = [
+    {
+        id: 1,
+        icon: faBan,
+        title: "No Entrance Exam",
+        content: "Freshmen don't need to take an entrance exam, undergo an interview, or meet cut-off grades.",
+        color: "#f75842"
+
+    },
+    {
+        id: 2,
+        icon: faHouseCircleCheck,
+        title: "Learning Environment",
+        content: "Immerse yourself in an optimal learning environment, where every room is equipped with air conditioning.",
+        color: "#00bf8e"
+    },
+    {
+        id: 3,
+        icon: faWifi,
+        title: "Campus & Facilities",
+        content: "The entire campus is covered by Wi-Fi, and two laboratories, each furnished with a comprehensive set of computers.",
+        color: "#f7c453"
+    },
+    {
+        id: 4,
+        icon: faUsers,
+        title: "Accepting Students",
+        content: "Accepting freshmen, transferees, returning students, ALS passers, and foreign students.",
+        color: "#00bf8e"
+    },
+    {
+        id: 5,
+        icon: faComputer,
+        title: "Online Learning",
+        content: "Online Learning for College and Senior High School, and DepEd voucher accepted for SHS.",
+        color: "#024173"
     }
 ]

@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <>
-      <footer className="bg-white dark:bg-[#011627]">
+      <footer className="bg-[#011627]">
         <div className="mx-auto w-full max-w-screen-xl">
           <div className="grid grid-cols-1 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
             <div>
