@@ -17,7 +17,7 @@ function PopularC() {
 
                 <div className='md:rounded-xl rounded-none mt-16 gap-x-0 md:gap-x-5 grid divide-x divide-y overflow-hidden sm:grid-cols-2 lg:divide-y-0 lg:grid-cols-3 xl:grid-cols-4'>
 
-                    <div className='relative group bg-white transition hover:z-[0] hover:shadow-2xl rounded-none md:rounded-xl'>
+                    <div className='relative group bg-white transition hover:z-[1] hover:shadow-2xl rounded-none md:rounded-xl'>
                         <div className='relative p-8 space-y-8'>
                             <FontAwesomeIcon icon={faComputer} className='w-10 text-5xl text-cyan-500' />
 
@@ -32,7 +32,7 @@ function PopularC() {
                         </div>
                     </div>
 
-                    <div className='relative group bg-white transition hover:z-[0] hover:shadow-2xl rounded-none md:rounded-xl'>
+                    <div className='relative group bg-white transition hover:z-[1] hover:shadow-2xl rounded-none md:rounded-xl'>
                         <div className='relative p-8 space-y-8'>
                             <FontAwesomeIcon icon={faCoins} className='w-10 text-5xl text-amber-500' />
 
@@ -47,7 +47,7 @@ function PopularC() {
                         </div>
                     </div>
 
-                    <div className='relative group bg-white transition hover:z-[0] hover:shadow-2xl rounded-none md:rounded-xl'>
+                    <div className='relative group bg-white transition hover:z-[1] hover:shadow-2xl rounded-none md:rounded-xl'>
                         <div className='relative p-8 space-y-8'>
                             <FontAwesomeIcon icon={faBook} className='w-10 text-5xl text-pink-500' />
 
@@ -62,7 +62,7 @@ function PopularC() {
                         </div>
                     </div>
 
-                    <div className="relative group bg-gray-100 transition hover:z-[0] hover:shadow-2xl lg:hidden xl:block rounded-none md:rounded-xl">
+                    <div className="relative group bg-gray-100 transition hover:z-[1] hover:shadow-2xl lg:hidden xl:block rounded-none md:rounded-xl">
                         <div className="relative p-8 space-y-8 border-dashed rounded-lg transition duration-300 group-hover:bg-white group-hover:border group-hover:scale-90">
 
                             <div className="space-y-2">
