@@ -4,10 +4,7 @@ import Login from "./Pages/Login";
 import PageNotFound from "./components/PageNotFound";
 import { Routes, Route } from "react-router-dom";
 import Allcourses from "./sections/coursesPages/Allcourses";
-import { lazy } from "react";
-
-
-const History = lazy(() => import('./sections/History'))
+import History from "./sections/History";
 
 function App() {
   return (
@@ -15,7 +12,7 @@ function App() {
       <Route path="/" element={<MainLayouts />}>
         <Route index element={<LandingPage />} />
         <Route path="/history" element={<History />} />
-        <Route path="/courses" element={<Allcourses />} />
+        <Route path="/courses/:course" element={<Allcourses />} />
 
         {/* <Route path="/bscs" element={<Bscs />} />
         <Route path="/bsit" element={<Bsit />} />
