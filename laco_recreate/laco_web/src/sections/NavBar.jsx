@@ -11,7 +11,7 @@ import { navList } from '../constants/constants';
 
 
 const NavBar = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleClick = () => {
@@ -35,43 +35,36 @@ const NavBar = () => {
   }, [])
 
   return (
-    <nav className={`w-screen fixed py-3 flex md:justify-between justify-around items-center z-20 ${isScrolled ? 'bg-blue-500/30 backdrop-blur-md' : ''}`}>
-      <div className='flex md:mx-20 mx-0'>
-        <Link to={"/"} id='brand' className='flex gap-2 items-center'>
-          <img src={logo} alt="logo" className='object-cover max-w-60 max-h-60' />
-        </Link>
-      </div>
-      <div className='hidden md:flex gap-5 mx-20'>
-        <FlyOutLink href={"/"}>Home</FlyOutLink>
-        <FlyOutLink FlyoutContent={NavContents}>About</FlyOutLink>
-        <FlyOutLink FlyoutContent={NavContentsTwo}>Admissions</FlyOutLink>
-        <FlyOutLink href={"/contact"}>Contact</FlyOutLink>
-      </div>
+    <>
+      <nav className={`w-screen fixed py-3 flex md:justify-between justify-around items-center z-20 ${isScrolled ? 'bg-blue-500/30 backdrop-blur-md' : ''} ${open ? 'hidden' : ''}`}>
+        <div className={`flex md:mx-20 mx-0 ${open ? 'hidden' : ''}`}>
+          <Link to={"/"} id='brand' className='flex gap-2 items-center'>
+            <img src={logo} alt="logo" className='object-cover max-w-60 max-h-60' />
+          </Link>
+        </div>
+        <div className='hidden md:flex gap-5 mx-20'>
+          <FlyOutLink href={"/"}>Home</FlyOutLink>
+          <FlyOutLink FlyoutContent={NavContents}>About</FlyOutLink>
+          <FlyOutLink FlyoutContent={NavContentsTwo}>Admissions</FlyOutLink>
+          <FlyOutLink href={"/contact"}>Contact</FlyOutLink>
+        </div>
 
+        <button className={`p-2 md:hidden ${open ? 'hidden' : ''}`} onClick={handleClick}>
+          <FontAwesomeIcon icon={faBars} className='text-white w-5 h-5' />
+        </button>
+      </nav>
 
-      {/* <button className='hidden md:flex items-center gap-2 border border-white px-6 py-2 rounded-md hover:border-custom-blue-1'>
-        <span className='text-white font-medium'>Join Us</span>
-        <FontAwesomeIcon icon={faArrowRight} className='text-white'/>
-      </button> */}
-
-      <button className='p-2 md:hidden' onClick={handleClick}>
-        <FontAwesomeIcon icon={faBars} className='text-white w-5 h-5' />
-      </button>
-
-      <div className={`fixed z-10 md:hidden bg-custom-blue-2 inset-0 p-3 ${open ? 'hidden' : ''}`}>
-        <div id='nav-bar' className='flex justify-between'>
+      <div className={`fixed z-10 md:hidden bg-custom-blue-2 inset-0 p-3 ${!open ? 'hidden' : 'block'}`}>
+        <div id='nav-bar' className='flex justify-around'>
           <a href="#" id='brand' className='flex gap-2 items-center'>
             <img src={logo} alt="logo" className='object-cover max-w-60 max-h-60' />
           </a>
-          <button className='p-2 md:hiddn' onClick={handleClick}>
+          <button className='p-2 md:hidden' onClick={handleClick}>
             <FontAwesomeIcon icon={faXmark} className='text-white w-5 h-5' />
           </button>
         </div>
         <div className='mt-6'>
           {navList.map(({ nav, route }, index) => (
-            // <a href="#" className='text-base m-2 p-2 hover:bg-custom-blue-1 block rounded-lg text-white' key={nav.id}>
-            //   {nav.nav}
-            // </a>
             <Link to={route} className='text-base m-2 p-2 hover:bg-custom-blue-1 block rounded-lg text-white' key={index}>
               {nav}
             </Link>
@@ -79,7 +72,7 @@ const NavBar = () => {
         </div>
       </div>
 
-    </nav>
+    </>
   );
 };
 
