@@ -7,7 +7,7 @@ function Footer() {
         <div className="mx-auto w-full max-w-screen-xl">
           <div className="grid grid-cols-1 gap-3 px-4 py-6 lg:py-8 md:grid-cols-3">
             <div>
-              <h2 className="mb-2 md:mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">La Consolacion College</h2>
+              <h2 className="mb-2 md:mb-6 text-sm font-semibold uppercase text-white">La Consolacion College</h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a href="#" className=" hover:underline">About</a>
@@ -18,7 +18,7 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-2 md:mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help center</h2>
+              <h2 className="mb-2 md:mb-6 text-sm font-semibold uppercase text-white">Help center</h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">Twitter</a>
@@ -32,7 +32,7 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-2 md:mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+              <h2 className="mb-2 md:mb-6 text-sm font-semibold uppercase text-white">Legal</h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">Privacy Policy</a>

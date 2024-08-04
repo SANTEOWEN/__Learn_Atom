@@ -1,7 +1,6 @@
 import { schl_1, schl_2, schl_7, schl_4, schl_5, schl_8 } from "../assets/school_photos/photos"
 import { event_1, event_2, event_3 } from "../assets/events_photos/events"
 import { faBan, faUsers, faHouseCircleCheck, faWifi, faComputer } from '@fortawesome/free-solid-svg-icons'
-import { color } from "framer-motion"
 
 
 export const schoolImages = [
@@ -71,7 +70,7 @@ export const navList = [
     {
         id: 7,
         nav: "Program Offerings",
-        route: "/ProgramOfferings",
+        route: "/courses",
     },
     {
         id: 8,
@@ -109,7 +108,7 @@ export const navLinksOne = [
     {
         id: 4,
         name: 'Program Offerings',
-        route: "/ProgramOfferings"
+        route: "/courses"
     },
 ]
 
@@ -207,4 +206,42 @@ export const historySchool = [
         color: "#00bf8e"
     }
 
+]
+
+export const courses = [
+    {
+        color: "text-cyan-500",
+        course: "Bachelor of Science In Computer Science",
+        content: "Prepares students for careers in software, data, cybersecurity, and other tech fields.",
+        imageUrl: "https://images.unsplash.com/photo-1610018556010-6a11691bc905?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        routes: "Bscs"
+    },
+    {
+        course: "Bachelor of Science In Information Technology",
+        content: "Covers the technical foundations of IT, preparing students for careers in software, networks, and security.",
+        imageUrl: "https://images.unsplash.com/photo-1624969862644-791f3dc98927?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        color: "text-indigo-500",
+        routes: "Bsit"
+    },
+    {
+        course: "Bachelor of Science In Education",
+        content: "Trains students for careers in teaching, educational administration, and curriculum development.",
+        imageUrl: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        color: "text-pink-500",
+        routes: "Bsed"
+    },
+    {
+        course: "Bachelor of Science In Business Administration",
+        content: "Equips students for business management, finance, marketing, and other in-demand roles.",
+        imageUrl: "https://images.unsplash.com/photo-1594394489799-88bf340a182d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        color: "text-amber-500",
+        routes: "Bsba"
+    },
+    {
+        color: "text-green-500",
+        course: "Bachelor of Science In Hospitality Management",
+        content: "Focuses on the hospitality industry, covering operations, food/beverage, events, and marketing.",
+        imageUrl: "https://images.unsplash.com/photo-1585002400872-ec6f400e56b8?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        routes: "/Bshm"
+    },
 ]

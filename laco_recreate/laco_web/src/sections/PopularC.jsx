@@ -27,7 +27,7 @@ function PopularC() {
                             </div>
                             <Link className='flex justify-between items-center group-hover:text-cyan-500'>
                                 <span className='text-sm'>Read More</span>
-                                <span className='translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0'><FontAwesomeIcon icon={faArrowRight} /></span>
+                                <span className='translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0'><FontAwesomeIcon icon={faArrowRight} className='text-lg' /></span>
                             </Link>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ function PopularC() {
                             </div>
                             <Link className='flex justify-between items-center group-hover:text-amber-500'>
                                 <span className='text-sm'>Read more</span>
-                                <span className='translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0'><FontAwesomeIcon icon={faArrowRight} /></span>
+                                <span className='translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0'><FontAwesomeIcon icon={faArrowRight} className='text-lg' /></span>
                             </Link>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ function PopularC() {
                             </div>
                             <Link className='flex justify-between items-center group-hover:text-pink-500'>
                                 <span className='text-sm'>Read more</span>
-                                <span className='translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0'><FontAwesomeIcon icon={faArrowRight} /></span>
+                                <span className='translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0'><FontAwesomeIcon icon={faArrowRight} className='text-lg' /></span>
                             </Link>
                         </div>
                     </div>
@@ -71,7 +71,7 @@ function PopularC() {
                             </div>
                             <Link className="flex justify-between items-center group-hover:text-yellow-600">
                                 <span className="text-sm">Read more</span>
-                                <span className="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0"><FontAwesomeIcon icon={faArrowRight} /></span>
+                                <span className="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0"><FontAwesomeIcon icon={faArrowRight} className='text-lg' /></span>
                             </Link>
                         </div>
                     </div>
