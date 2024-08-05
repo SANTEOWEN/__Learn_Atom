@@ -5,7 +5,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
-import { navList } from '../constants/constants';
+import { navList, scrollTop } from '../constants/constants';
 
 
 
@@ -82,7 +82,7 @@ const NavBar = () => {
         </div>
         <div className='mt-6'>
           {navList.map(({ nav, route }, index) => (
-            <Link to={route} className='text-base m-2 p-2 hover:bg-custom-blue-1 block rounded-lg text-white' key={index}>
+            <Link to={route} className='text-base m-2 p-2 hover:bg-custom-blue-1 block rounded-lg text-white' key={index} onClick={() => scrollTop()}>
               {nav}
             </Link>
           ))}
