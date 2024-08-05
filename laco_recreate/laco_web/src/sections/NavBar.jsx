@@ -1,8 +1,7 @@
 import FlyOutLink from '../components/FlyOutLink';
 import logo from '../assets/main-2.png';
-import NavContentsTwo from '../components/NavContentsTwo';
 import NavContents from '../components/NavContents';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
@@ -13,6 +12,7 @@ import { navList } from '../constants/constants';
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const currentLoc = useLocation();
 
   const handleClick = () => {
     setOpen((prev) => !prev);
@@ -34,9 +34,26 @@ const NavBar = () => {
 
   }, [])
 
+  const dynamicNavColor = () => {
+    switch (currentLoc.pathname) {
+      case '/Courses/bscs':
+        return 'bg-cyan-500/30';
+      case '/Courses/bsit':
+        return 'bg-indigo-500/30';
+      case '/Courses/bsed':
+        return 'bg-pink-500/30';
+      case '/Courses/bsba':
+        return 'bg-amber-500/30';
+      case '/Courses/bshm':
+        return 'bg-green-500/30';
+      default:
+        return null;
+    }
+  }
+
   return (
     <>
-      <nav className={`w-screen fixed py-3 flex md:justify-between justify-around items-center z-20 ${isScrolled ? 'bg-blue-500/30 backdrop-blur-md' : ''} ${open ? 'hidden' : ''}`}>
+      <nav className={`w-screen fixed py-3 flex md:justify-between justify-around items-center z-20 ${isScrolled ? `${dynamicNavColor()} backdrop-blur-md` : ''} ${open ? 'hidden' : ''}`}>
         <div className={`flex md:mx-20 mx-0 ${open ? 'hidden' : ''}`}>
           <Link to={"/"} id='brand' className='flex gap-2 items-center'>
             <img src={logo} alt="logo" className='object-cover max-w-60 max-h-60' />

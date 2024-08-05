@@ -27,10 +27,7 @@ const router = createBrowserRouter(
         <Route path="bsba" element={<Bsba />} />
       </Route>
 
-      < Route path="/login" element={< Login />} />
       < Route path="*" element={< PageNotFound />} />
-
-
     </Route>
   )
 );

@@ -1,9 +1,29 @@
-import React from 'react'
+import { useLocation } from "react-router-dom";
+
 
 function Footer() {
+  const currentLoc = useLocation();
+
+  const dynamicNavColor = () => {
+    switch (currentLoc.pathname) {
+      case '/Courses/bscs':
+        return 'border-cyan-500';
+      case '/Courses/bsit':
+        return 'border-indigo-500';
+      case '/Courses/bsed':
+        return 'border-pink-500';
+      case '/Courses/bsba':
+        return 'border-amber-500';
+      case '/Courses/bshm':
+        return 'border-green-500';
+      default:
+        return 'border-[#1f2937]';
+    }
+  }
+
   return (
     <>
-      <footer className="bg-[#011627]">
+      <footer className={`bg-[#1f2937] border-t-[1px] ${dynamicNavColor()}`}>
         <div className="mx-auto w-full max-w-screen-xl">
           <div className="grid grid-cols-1 gap-3 px-4 py-6 lg:py-8 md:grid-cols-3">
             <div>
@@ -47,7 +67,7 @@ function Footer() {
             </div>
           </div>
           <div className="px-4 py-6  dark:bg-[#bg-gray-100] md:flex md:items-center md:justify-between">
-            <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2024 <a href="https://flowbite.com/">La Consolacion College Novaliches™</a>. All Rights Reserved.
+            <span className="text-sm text-gray-300 sm:text-center">© 2024 <a href="https://flowbite.com/">La Consolacion College Novaliches™</a>. All Rights Reserved.
             </span>
             <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
               <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">

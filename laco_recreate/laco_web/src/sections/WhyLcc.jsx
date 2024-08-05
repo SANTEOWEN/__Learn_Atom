@@ -23,12 +23,12 @@ function WhyLcc() {
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-[1.2rem]'>
                     {reasons.map((({ icon, title, content, color }, index) => {
                         return (
-                            <article key={index} className='p-8 rounded-lg bg-[#011627] shadow-lg'>
+                            <article key={index} className='p-8 rounded-lg bg-[#1f2937] shadow-lg'>
                                 <span className={`p-[0.7rem] rounded-md`} style={{ backgroundColor: `${color}` }}>
                                     <FontAwesomeIcon icon={icon} className='text-white' />
                                 </span>
                                 <h5 className='my-6 text-white text-lg'>{title}</h5>
-                                <p className='text-base text-white'>{content}</p>
+                                <p className='text-base text-gray-400'>{content}</p>
                             </article>
                         )
                     }))}

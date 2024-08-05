@@ -235,3 +235,8 @@ export const courses = [
         routes: "bshm"
     },
 ]
+
+//Functions 
+export const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}

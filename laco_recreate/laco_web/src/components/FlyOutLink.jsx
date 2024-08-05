@@ -3,6 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const FlyOutLink = ({ children, href, FlyoutContent }) => {
+    const scrollTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
     const [open, setOpen] = useState(false);
     const showFlyout = open && FlyoutContent;
 
@@ -19,7 +23,8 @@ const FlyOutLink = ({ children, href, FlyoutContent }) => {
                 }} className='absolute -bottom-2 -left-2 -right-2 h-1 origin-left rounded-full bg-white transition-transform duration-300 ease-out' />
             </a>
              */}
-            <Link to={href} className='relative text-white text-lg cursor-pointer font-thin'>
+
+            <Link to={href} className='relative text-white text-base cursor-pointer' onClick={() => scrollTop()}>
                 {children}
                 <span className='absolute -bottom-2 -left-2 -right-2 h-1 origin-left rounded-full bg-white transition-transform duration-300 ease-out' style={{ transform: showFlyout ? "scale(1)" : "scaleX(0)" }}></span>
             </Link>
