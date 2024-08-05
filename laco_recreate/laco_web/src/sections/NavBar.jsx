@@ -54,7 +54,7 @@ const NavBar = () => {
         </button>
       </nav>
 
-      <div className={`fixed z-10 md:hidden bg-custom-blue-2 inset-0 p-3 ${!open ? 'hidden' : 'block'}`}>
+      <div className={`fixed z-10 md:hidden bg-blue-500/30 backdrop-blur-md inset-0 p-3 ${!open ? 'hidden' : 'block'}`}>
         <div id='nav-bar' className='flex justify-around'>
           <a href="#" id='brand' className='flex gap-2 items-center'>
             <img src={logo} alt="logo" className='object-cover max-w-60 max-h-60' />

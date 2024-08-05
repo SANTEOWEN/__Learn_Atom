@@ -15,8 +15,8 @@ function Card({ imageUrl, title, contents, color, routes }) {
                 <p className="mb-3 font-normal text-gray-400">{contents}</p>
             </div>
 
-            <Link to={`/courses/${routes}`} className={`p-5 flex justify-between items-center`}>
-                <span className={`text-sm ${color}`}>Read more</span>
+            <Link to={`/Courses/${routes}`} className={`p-5 flex justify-between items-center`}>
+                <span className={`text-sm ${color}`}>Learn more</span>
                 <span className='translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0'><FontAwesomeIcon icon={faArrowRight} className={`text-lg text-white`} /></span>
             </Link>
             {/* to={`/courses/${routes}`} */}

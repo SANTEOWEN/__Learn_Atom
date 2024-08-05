@@ -4,7 +4,7 @@ import Bsed from "./Bsed";
 import Bshm from "./Bshm";
 import Bsit from "./Bsit";
 
-export {
+export const course = {
     Bsba,
     Bscs,
     Bsed,
