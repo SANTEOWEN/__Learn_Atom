@@ -47,7 +47,7 @@ const NavBar = () => {
       case '/Courses/bshm':
         return 'bg-green-500/30';
       default:
-        return null;
+        return 'bg-[#3f83f8]/30';
     }
   }
 

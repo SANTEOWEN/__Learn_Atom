@@ -1,5 +1,6 @@
 import { navLinksOne } from "../constants/constants"
 import { Link, useLocation } from "react-router-dom"
+import { scrollTop } from "../constants/constants";
 
 const NavContents = () => {
     const currentLoc = useLocation();
@@ -16,7 +17,7 @@ const NavContents = () => {
             case '/Courses/bshm':
                 return 'bg-green-500';
             default:
-                return null;
+                return 'bg-[#3f83f8]';
         }
     }
 
@@ -26,7 +27,7 @@ const NavContents = () => {
             <div className="mb-3 space-y-3">
                 {navLinksOne.slice(0, 4).map(({ name, route }, index) => (
                     // <a href="#" key={i} className="text-white block text-base hover:underline">{link.links}</a>
-                    <Link to={route} key={index} className="text-white block text-base hover:underline">{name}</Link>
+                    <Link to={route} key={index} className="text-white block text-base hover:underline" onClick={() => scrollTop()}>{name}</Link>
                 ))}
             </div>
         </div>
