@@ -3,6 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { scrollTop } from '../constants/constants'
 
 // eslint-disable-next-line react/prop-types
 function Card({ imageUrl, title, contents, color, routes }) {
@@ -15,7 +16,7 @@ function Card({ imageUrl, title, contents, color, routes }) {
                 <p className="mb-3 font-normal text-gray-400">{contents}</p>
             </div>
 
-            <Link to={`/Courses/${routes}`} className={`p-5 flex justify-between items-center`}>
+            <Link to={`/Courses/${routes}`} className={`p-5 flex justify-between items-center`} onClick={() => scrollTop()}>
                 <span className={`text-sm ${color}`}>Learn more</span>
                 <span className='translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0'><FontAwesomeIcon icon={faArrowRight} className={`text-lg text-white`} /></span>
             </Link>
