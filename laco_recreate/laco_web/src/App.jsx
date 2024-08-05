@@ -21,9 +21,9 @@ const router = createBrowserRouter(
 
       <Route path="Courses" element={<Allcourses />}>
         <Route path="bscs" element={<Bscs />} />
-        <Route path="bsit" element={<Bsed />} />
+        <Route path="bsed" element={<Bsed />} />
         <Route path="bshm" element={<Bshm />} />
-        <Route path="bsed" element={<Bsit />} />
+        <Route path="bsit" element={<Bsit />} />
         <Route path="bsba" element={<Bsba />} />
       </Route>
 

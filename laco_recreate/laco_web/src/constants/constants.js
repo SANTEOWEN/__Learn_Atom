@@ -97,8 +97,8 @@ export const navLinksOne = [
     },
     {
         id: 4,
-        name: 'Program Offerings',
-        route: "/Courses"
+        name: 'Frequently Ask Questions',
+        route: "/Faq"
     },
 ]
 

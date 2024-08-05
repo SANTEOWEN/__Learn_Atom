@@ -45,7 +45,7 @@ const NavBar = () => {
         <div className='hidden md:flex gap-5 mx-20'>
           <FlyOutLink href={"/"}>Home</FlyOutLink>
           <FlyOutLink FlyoutContent={NavContents}>About</FlyOutLink>
-          <FlyOutLink FlyoutContent={NavContentsTwo}>Admissions</FlyOutLink>
+          <FlyOutLink href={"Courses"}>Programs</FlyOutLink>
           <FlyOutLink href={"/contact"}>Contact</FlyOutLink>
         </div>
 
