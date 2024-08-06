@@ -1,8 +1,7 @@
-import React from 'react'
-import { BookMarked, MoveRight, BookHeart, LibraryBig, PersonStanding, Wand, HeartHandshake, HandHeart } from 'lucide-react'
+import { MoveRight, BookHeart, LibraryBig, PersonStanding, Wand, HeartHandshake, BookUp } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { scrollTop } from '../../../constants/constants'
-import { bsedImg, sharingImg } from '../../../assets/courses_assets/courseAssets'
+import { sharingImg } from '../../../assets/courses_assets/courseAssets'
 
 function Bsed() {
   return (
@@ -70,7 +69,7 @@ function Bsed() {
               <div className='group col-span-full lg:col-span-2 overflow-hidden flex relative p-8 rounded-xl bg-[#1f2937] border border-pink-500'>
                 <div className='size-fit m-auto relatives'>
                   <div className='group relative h-28 w-full flex items-start justify-start'>
-                    <BookHeart className='w-fit block mx-auto' size={100} color='white' />
+                    <BookUp className='w-fit block mx-auto' size={100} color='white' />
                   </div>
                   <div className='flex flex-col justify-center'>
                     <h2 className="mt-6 text-center font-medium text-gray-300">Educational Technology</h2>

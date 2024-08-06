@@ -76,13 +76,13 @@ const NavBar = () => {
           <a href="#" id='brand' className='flex gap-2 items-center'>
             <img src={logo} alt="logo" className='object-cover max-w-60 max-h-60' />
           </a>
-          <button className='p-2 md:hidden' onClick={handleClick}>
+          <button className='p-2 md:hidden' onClick={() => { handleClick();}}>
             <FontAwesomeIcon icon={faXmark} className='text-white w-5 h-5' />
           </button>
         </div>
         <div className='mt-6'>
           {navList.map(({ nav, route }, index) => (
-            <Link to={route} className='text-base m-2 p-2 hover:bg-custom-blue-1 block rounded-lg text-white' key={index} onClick={() => scrollTop()}>
+            <Link to={route} className='text-base m-2 p-2 hover:bg-custom-blue-1 block rounded-lg text-white' key={index} onClick={() => {scrollTop();  setOpen(false)}}>
               {nav}
             </Link>
           ))}
