@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/no-unknown-property */
 const Privacy = () => {
     return <>
         <div className="lg:py-20 py-20 bg-[#1d232f]">
@@ -18,7 +16,7 @@ const Privacy = () => {
                             <summary className="flex justify-between items-center font-medium cursor-pointer list-none text-gray-200">
                                 <span> Website Privacy Statement</span>
                                 <span className="transition group-open:rotate-180">
-                                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+                                    <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                     </svg>
                                 </span>
                             </summary>
@@ -34,7 +32,7 @@ const Privacy = () => {
                             <summary className="flex justify-between items-center font-medium cursor-pointer list-none text-gray-200">
                                 <span> Use of Cookies</span>
                                 <span className="transition group-open:rotate-180">
-                                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+                                    <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                     </svg>
                                 </span>
                             </summary>
@@ -51,7 +49,7 @@ const Privacy = () => {
                             <summary className="flex justify-between items-center font-medium cursor-pointer list-none text-gray-200">
                                 <span> Transfer of Data</span>
                                 <span className="transition group-open:rotate-180">
-                                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+                                    <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                     </svg>
                                 </span>
                             </summary>
@@ -67,7 +65,7 @@ const Privacy = () => {
                             <summary className="flex justify-between items-center font-medium cursor-pointer list-none text-gray-200">
                                 <span> Inquiries & Complaints</span>
                                 <span className="transition group-open:rotate-180">
-                                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+                                    <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                     </svg>
                                 </span>
                             </summary>
@@ -91,7 +89,7 @@ const Privacy = () => {
                             <summary className="flex justify-between items-center font-medium cursor-pointer list-none text-gray-200">
                                 <span> Use of Data</span>
                                 <span className="transition group-open:rotate-180">
-                                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+                                    <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                     </svg>
                                 </span>
                             </summary>
@@ -109,7 +107,7 @@ const Privacy = () => {
                             <summary className="flex justify-between items-center font-medium cursor-pointer list-none text-gray-200">
                                 <span> Storage, Access, Retention & Destruction of Data</span>
                                 <span className="transition group-open:rotate-180">
-                                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+                                    <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                     </svg>
                                 </span>
                             </summary>
@@ -131,13 +129,13 @@ const Privacy = () => {
                             <summary className="flex justify-between items-center font-medium cursor-pointer list-none text-gray-200">
                                 <span> How do I contact support?</span>
                                 <span className="transition group-open:rotate-180">
-                                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+                                    <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                     </svg>
                                 </span>
                             </summary>
                             <p className="text-neutral-400 mt-3 group-open:animate-fadeIn">
                                 If you need help with the platform or have any other questions, you can contact the
-                                company's support team by submitting a support request through the website or by emailing
+                                companys support team by submitting a support request through the website or by emailing
                                 support@We.com.
                             </p>
                         </details>

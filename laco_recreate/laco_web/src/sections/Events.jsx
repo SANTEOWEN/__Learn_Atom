@@ -4,8 +4,6 @@ const Events = () => {
 
     //Dont forget about the useEffect this helps you a lot.
     //use the useEffect hook if youre not dealing with functions or your just focusing only on making conditions/Async functions
-
-    let gridStyle = `grid grid-cols-1 ${events.length > 3 ? 'lg:grid-cols-5' : 'lg:grid-cols-3'} gap-y-8 gap-x-5 content-center`
     return (
         <>
             <section className="flex flex-col w-full min-h-60 mx-auto mt-[2rem] md:mt-10">
@@ -14,7 +12,7 @@ const Events = () => {
                     <p className="mt-4 text-gray-300">This are the list of Activities, Events and announcements.</p>
                 </div>
                 <div className="w-full flex flex-row justify-center items-center p-10">
-                    <div className={gridStyle}>
+                    <div className={`grid grid-cols-1 ${events.length > 3 ? 'lg:grid-cols-5' : 'lg:grid-cols-3'} gap-y-8 gap-x-5 content-center`}>
                         {events.map((({ img, title, content, date }, index) => {
                             return (
                                 <div className="max-w-sm border rounded-lg shadow-lg bg-gray-800 border-gray-700" key={index} >
