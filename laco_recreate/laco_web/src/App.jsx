@@ -4,7 +4,7 @@ import { Route, createRoutesFromElements } from "react-router-dom";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import LandingPage from "./Pages/Landing";
-import MainLayouts from "./Layouts/MainLayouts";
+// import MainLayouts from "./Layouts/MainLayouts";
 import PageNotFound from "./components/PageNotFound";
 import Allcourses from "./sections/coursesPages/Allcourses";
 // import History from "./sections/History";
@@ -20,12 +20,17 @@ import MissionVision from "./sections/MissionVision";
 import Loading from "./components/Loading";
 
 const History = lazy(() => import('./sections/History'))
-
+const MainLayouts = lazy(() => import('./Layouts/MainLayouts'));
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<MainLayouts />}>
+    <Route path="/" element={
+      <Suspense fallback={() => <Loading />}>
+        <MainLayouts />
+      </Suspense>
+    }>
+
       <Route index element={<LandingPage />} />
       <Route path="history" element={
         <Suspense fallback={() => <Loading />}>

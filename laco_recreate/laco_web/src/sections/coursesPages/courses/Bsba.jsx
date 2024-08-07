@@ -7,7 +7,7 @@ function Bsba() {
     return (
         <>
             <div className='max-h-full w-full flex lg:items-center flex-col z-50'>
-                <h1 className="lg:mt-0 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-white">BACHELOR OF SCIENCE IN <span className='text-amber-500'>EDUCATION</span></h1>
+                <h1 className="lg:mt-0 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-white">BACHELOR OF SCIENCE IN <span className='text-amber-500'>BUSINESS ADMINISTRATION</span></h1>
                 <p className="mt-3 text-lg font-normal lg:text-base sm:px-16 xl:px-48 text-start lg:text-center text-ellipsis text-gray-400">The BSBA program provides a comprehensive study of the theoretical and practical foundations of business administration. It prepares students to become well-rounded business professionals, equipped with the knowledge and skills to lead, manage, and drive the success of organizations across various industries.</p>
                 <p className='hidden lg:block mt-3 text-lg font-normal  lg:text-base sm:px-16 xl:px-48 text-start lg:text-center text-ellipsis text-gray-400'>The curriculum is developed in accordance with standards set by the Commission on Higher Education (CHED) and is benchmarked against leading business programs both nationally and internationally. It addresses the evolving needs of the business world by delivering a multi-disciplinary education covering core business functions such as management, finance, marketing, operations, and human resources.</p>
 
