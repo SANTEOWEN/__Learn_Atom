@@ -43,7 +43,7 @@ const router = createBrowserRouter(
 
       <Route path="faq" element={<Faq />} />
       <Route path="Privacy-policy" element={<Privacy />} />
-      <Route path="Mission_vision" element={<MissionVision />} />
+      <Route path="Mission-vision" element={<MissionVision />} />
 
       <Route path="*" element={< PageNotFound />} />
     </Route>

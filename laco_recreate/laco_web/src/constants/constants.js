@@ -78,7 +78,7 @@ export const navLinksOne = [
     {
         id: 2,
         name: 'Mission & Vission',
-        route: "/Mission_vision"
+        route: "/Mission-vision"
     },
     {
         id: 3,
