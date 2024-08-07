@@ -50,22 +50,17 @@ export const navList = [
     {
         id: 4,
         nav: "Mission & Vission",
-        route: "/MissionVission",
+        route: "/Mission-vision",
     },
     {
         id: 5,
         nav: "Data Privacy",
-        route: "/DataPrivacy",
+        route: "/Privacy-policy",
     },
     {
         id: 7,
         nav: "Program Offerings",
         route: "/Courses",
-    },
-    {
-        id: 10,
-        nav: "Contact Us",
-        route: "/contact"
     },
 ]
 
