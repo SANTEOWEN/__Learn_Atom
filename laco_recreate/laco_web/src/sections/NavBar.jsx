@@ -63,7 +63,6 @@ const NavBar = () => {
           <FlyOutLink href={"/"}>Home</FlyOutLink>
           <FlyOutLink FlyoutContent={NavContents}>About</FlyOutLink>
           <FlyOutLink href={"Courses"}>Programs</FlyOutLink>
-          <FlyOutLink href={"/contact"}>Contact</FlyOutLink>
         </div>
 
         <button className={`p-2 md:hidden ${open ? 'hidden' : ''}`} onClick={handleClick}>
@@ -71,18 +70,18 @@ const NavBar = () => {
         </button>
       </nav>
 
-      <div className={`fixed z-10 md:hidden bg-blue-500/30 backdrop-blur-md inset-0 p-3 ${!open ? 'hidden' : 'block'}`}>
-        <div id='nav-bar' className='flex justify-around'>
+      <div className={`fixed z-10 md:hidden bg-blue-500/30 backdrop-blur-md inset-0 ${!open ? 'hidden' : 'block'}`}>
+        <div id='nav-bar' className='flex justify-around items-center py-3'>
           <a href="#" id='brand' className='flex gap-2 items-center'>
             <img src={logo} alt="logo" className='object-cover max-w-60 max-h-60' />
           </a>
-          <button className='p-2 md:hidden' onClick={() => { handleClick();}}>
+          <button className='p-2 md:hidden' onClick={() => { handleClick(); }}>
             <FontAwesomeIcon icon={faXmark} className='text-white w-5 h-5' />
           </button>
         </div>
         <div className='mt-6'>
           {navList.map(({ nav, route }, index) => (
-            <Link to={route} className='text-base m-2 p-2 hover:bg-custom-blue-1 block rounded-lg text-white' key={index} onClick={() => {scrollTop();  setOpen(false)}}>
+            <Link to={route} className='text-base m-2 p-2 hover:bg-custom-blue-1 block rounded-lg text-white' key={index} onClick={() => { scrollTop(); setOpen(false) }}>
               {nav}
             </Link>
           ))}

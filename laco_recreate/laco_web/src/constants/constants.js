@@ -43,11 +43,6 @@ export const navList = [
         route: "/",
     },
     {
-        id: 2,
-        nav: "About",
-        route: "/About",
-    },
-    {
         id: 3,
         nav: "History",
         route: "/History",
@@ -68,11 +63,6 @@ export const navList = [
         route: "/Courses",
     },
     {
-        id: 9,
-        nav: "History",
-        route: "/History"
-    },
-    {
         id: 10,
         nav: "Contact Us",
         route: "/contact"
@@ -88,12 +78,12 @@ export const navLinksOne = [
     {
         id: 2,
         name: 'Mission & Vission',
-        route: "/MissionVission"
+        route: "/Mission_vision"
     },
     {
         id: 3,
         name: 'Privacy Policy',
-        route: "/DataPrivacy"
+        route: "/Privacy-policy"
     },
     {
         id: 4,

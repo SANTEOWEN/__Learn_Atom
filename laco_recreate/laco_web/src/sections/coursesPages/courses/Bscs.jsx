@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { Pyramid, Binary, ShieldCheck, Database, Brain, Proportions, MoveRight } from 'lucide-react'
 import { scrollTop } from '../../../constants/constants'
@@ -15,7 +14,7 @@ function Bscs() {
                     <div className="relative">
                         <div className="relative  grid gap-3 grid-cols-6">
 
-                            <div className='group col-span-full lg:col-span-2 overflow-hidden flex relative p-8 rounded-xl bg-[#1f2937] border border-cyan-500'>
+                            <div className='group col-span-full lg:col-span-2 overflow-hidden flex relative p-8 rounded-xl bg-[#1f2937] backdrop-blur-md border border-cyan-500'>
                                 <div className='size-fit m-auto relatives'>
                                     <div className='group relative h-28 w-full flex items-start justify-start'>
                                         <Pyramid className='w-fit block mx-auto' size={100} color='white' />
