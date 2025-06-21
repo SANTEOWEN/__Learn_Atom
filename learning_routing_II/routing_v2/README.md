@@ -7,4 +7,4 @@ This is a side project rebuilding of laco website from sratch
 - TailwindCss
 - Vite
 - Bun
-_ Tanstack Router
+- Tanstack Router
